@@ -19,9 +19,9 @@ Step 2:<br>
 Edit your Activity to contain a binding object: ActivityMainBinding binding, for my example, followed by ```setContentView(binding.getRoot())```<br>
 binding.getRoot() returns a View, just like your typical R.id.activity_main.
 
-You can access your widgets via binding, and say goodbye to findViewById, isn't it lovely to save your code lines!
+You can access your widgets via binding, and say goodbye to findViewById. Isn't it lovely to save your code lines!
 
-Warning: If you use it, the codes are going to be different from the profs, I'm here to introduce the tool, not to add your pains.
+Warning: If you use it, the codes are going to be different from the profs, I'm here to introduce the code, not to add your pains.
 
 <img src="./Week 8 Xtras/viewbind.gif"/>
 
