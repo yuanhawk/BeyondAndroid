@@ -2,7 +2,7 @@
 
 # Week 8
 With reference to: https://developer.android.com/topic/libraries/view-binding<br>
-So for those who looking for an alternative way to having to declare findViewByIds boilerplate codes, I have done a mini tutorial on ViewBinding. Since Prof Kenny 
+So for those who looking for an alternative way to avoid declaring findViewByIds boilerplate codes, I have done a mini tutorial on ViewBinding. Since Prof Kenny 
 has taught only Activity, so I will do a demo using Activity, you can attempt it on Fragment, if you would like to.
 
 Step 1:<br>
@@ -19,7 +19,7 @@ Step 2:<br>
 Edit your Activity to contain a binding object: ActivityMainBinding binding, for my example, followed by ```setContentView(binding.getRoot())```<br>
 binding.getRoot() returns a View, just like your typical R.id.activity_main.
 
-You can access your widgets via binding, so you can escape the pains of findViewById, isn't it lovely for your project!
+You can access your widgets via binding, and say goodbye to findViewById, isn't it lovely to save your code lines!
 
 Warning: If you use it, the codes are going to be different from the profs, I'm here to introduce the tool, not to add your pains.
 
