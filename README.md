@@ -1,6 +1,7 @@
 # BeyondAndroid
 
 # Week 8
+With reference to: https://developer.android.com/topic/libraries/view-binding<br>
 So for those who looking for an alternative way to having to declare findViewByIds boilerplate codes, I have done a mini tutorial on ViewBinding. Since Prof Kenny 
 has taught only Activity, so I will do a demo using Activity, you can attempt it on Fragment, if you would like to.
 
