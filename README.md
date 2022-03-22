@@ -61,4 +61,4 @@ Note: Refer to the lecture recording, I have run through which layouts to view, 
 Extras:
 In ```MainFragment``` and ```fragment_main.xml```, I utilized databinding to link up my model codes to a specific model. The advantage for this method is to use the binding design pattern to avoid null pointer exception. The advantage of using the DataBinding and the model method is so that you can make data more structured and organized.
     
-For a hierarchical approach to OOP, I use a BaseFragment to retrieve the navigation controller to be reused across all my fragment instance. This makes your codes more concise and easily maintained.
+For a hierarchical approach to OOP, I use a BaseFragment to retrieve the navcontroller to be reused across all my fragment instance. This makes your codes more concise and easily maintained.
