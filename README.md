@@ -51,7 +51,7 @@ The strongest benefit about Jetpack Navigation is its navigation graph and its t
 Add this to your grade file
 <img src="./Week 9 Xtras/dependencies.png"/>
 
-In your ```MainActivity.java```, there is no code of whatsover as you are using purely fragments.
+In your ```MainActivity.java```, there should be fewer codes as you are using purely fragments.
 <img src="./Week 9 Xtras/MainActivity.png"/>
 
 In your ```activity_main.xml```, declare ```androidx.fragment.app.FragmentContainerView``` to serve as a container for fragment.
