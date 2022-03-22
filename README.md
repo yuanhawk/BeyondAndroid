@@ -56,6 +56,8 @@ For simplicity, I will be creating 2 fragments: MainFragment and SubFragment. To
     
 If you utilize the old fragment transaction method, this is where the difference lies, the backstack is managed by the system with few codes. You can stick to the old fragment transactions, just that you have to put up with fragment management and the lengthy codes.
 
+Note: Refer to the lecture recording, I have run through which layouts to view, I won't be taking any photos, as it is rather unnecessary!
+
 Extras:
 In ```MainFragment``` and ```fragment_main.xml```, I utilized databinding to link up my model codes to a specific model. The advantage for this method is to use the binding design pattern to avoid null pointer exception. The advantage of using the DataBinding and the model method is so that you can make data more structured and organized.
     
