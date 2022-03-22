@@ -48,11 +48,18 @@ For those who are attempting fragments instead, here is a nice recommendation fr
 
 The strongest benefit about Jetpack Navigation is its navigation graph and its testability, so I am just introducing some functionality, and I expect some form of self-study here.
 
+Add this to your grade file
+<img src="./Week 9 Xtras/dependencies.png"/>
+
 In your ```MainActivity.java```, there is no code of whatsover as you are using purely fragments.
+<img src="./Week 9 Xtras/MainActivity.png"/>
 
 In your ```activity_main.xml```, declare ```androidx.fragment.app.FragmentContainerView``` to serve as a container for fragment.
+<img src="./Week 9 Xtras/activity_main.png"/>
 
 For simplicity, I will be creating 2 fragments: MainFragment and SubFragment. To transit between fragments, utilize the navcontroller to navigate using the ```R.id.action_<source fragment>_<destination fragment>```, and for going back, use the navcontroller to ```popBackStack```.
+<img src="./Week 9 Xtras/MainFragment.png"/>
+<img src="./Week 9 Xtras/SubFragment.png"/>
     
 If you utilize the old fragment transaction method, this is where the difference lies, the backstack is managed by the system with few codes. You can stick to the old fragment transactions, just that you have to put up with fragment management and the lengthy codes.
 
