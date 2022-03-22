@@ -10,6 +10,7 @@ import androidx.databinding.DataBindingUtil;
 
 import tech.yuanhawk.fragmentsample.R;
 import tech.yuanhawk.fragmentsample.databinding.FragmentMainBinding;
+import tech.yuanhawk.fragmentsample.models.Amount;
 
 public class MainFragment extends BaseFragment implements View.OnClickListener {
 
@@ -20,6 +21,8 @@ public class MainFragment extends BaseFragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false);
         binding.buttonSetExchangeRate.setOnClickListener(this);
+        Amount amt = new Amount("", "");
+        binding.setAmount(amt);
         return binding.getRoot();
     }
 

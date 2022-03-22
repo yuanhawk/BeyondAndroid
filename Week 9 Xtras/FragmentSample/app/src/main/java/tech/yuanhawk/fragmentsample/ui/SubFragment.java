@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil;
 
 import tech.yuanhawk.fragmentsample.R;
 import tech.yuanhawk.fragmentsample.databinding.FragmentSubBinding;
+import tech.yuanhawk.fragmentsample.models.ExchangeRate;
 
 public class SubFragment extends BaseFragment implements View.OnClickListener {
 
@@ -19,6 +20,8 @@ public class SubFragment extends BaseFragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_sub, container, false);
         binding.goBack.setOnClickListener(this);
+        ExchangeRate er = new ExchangeRate("", "");
+        binding.setRate(er);
         return binding.getRoot();
     }
 
