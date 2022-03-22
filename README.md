@@ -36,3 +36,14 @@ Log.w(); // Warning<br>
 Log.e(); // Error
 
 So please use them to debug psps...
+
+# Week 9
+With reference to: https://developer.android.com/guide/navigation/<br>
+
+A long time ago in a galaxy far, far away… Android was born.
+
+The ecosystem was young and there were practically no design or architecture guidelines. Developers back then used “god Activities” (Activities having thousands lines of code) left and right. These were dark, but interesting times. Well, at least in my imagination. I myself became Android developer at a much later stage. Therefore, my own historical perspective is probably incomplete, so take it with a grain of salt. (sorry for the rip off from https://www.techyourchance.com/dagger-android-dead/, but the analogy is spot on)
+
+For those who are attempting fragments instead, here is a nice recommendation from the way to go, avoid your fragment transactions found in some tutorials (it's outdated anyways), use Jetpack Navigation instead. I am assuming that you know Activity Lifecycle here, Fragments just has slightly more lifecycle events, go read up on: https://developer.android.com/guide/fragments/lifecycle, and I won't be spoonfeeding everything here.
+
+The strongest benefit about Jetpack Navigation is its navigation graph and its testability, so I am just introducing some functionality, and I expect some form of self-study here.
