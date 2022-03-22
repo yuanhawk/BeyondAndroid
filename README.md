@@ -42,8 +42,21 @@ With reference to: https://developer.android.com/guide/navigation/<br>
 
 A long time ago in a galaxy far, far away… Android was born.
 
-The ecosystem was young and there were practically no design or architecture guidelines. Developers back then used “god Activities” (Activities having thousands lines of code) left and right. These were dark, but interesting times. Well, at least in my imagination. I myself became Android developer at a much later stage. Therefore, my own historical perspective is probably incomplete, so take it with a grain of salt. (sorry for the rip off from https://www.techyourchance.com/dagger-android-dead/, but the analogy is spot on)
+The ecosystem was young and there were practically no design or architecture guidelines. Developers back then used “god Activities” (Activities having thousands lines of code) left and right. These were dark, but interesting times. Well, at least in my imagination. I myself became Android developer at a much later stage. Therefore, my own historical perspective is probably incomplete, so take it with a grain of salt. (sorry for the rip off from somewhere, but the analogy is spot on)
 
 For those who are attempting fragments instead, here is a nice recommendation from the way to go, avoid your fragment transactions found in some tutorials (it's outdated anyways), use Jetpack Navigation instead. I am assuming that you know Activity Lifecycle here, Fragments just has slightly more lifecycle events, go read up on: https://developer.android.com/guide/fragments/lifecycle, and I won't be spoonfeeding everything here.
 
 The strongest benefit about Jetpack Navigation is its navigation graph and its testability, so I am just introducing some functionality, and I expect some form of self-study here.
+
+In your ```MainActivity.java```, there is no code of whatsover as you are using purely fragments.
+
+In your ```activity_main.xml```, declare ```androidx.fragment.app.FragmentContainerView``` to serve as a container for fragment.
+
+For simplicity, I will be creating 2 fragments: MainFragment and SubFragment. To transit between fragments, utilize the navcontroller to navigate using the ```R.id.action_<source fragment>_<destination fragment>```, and for going back, use the navcontroller to ```popBackStack```.
+    
+If you utilize the old fragment transaction method, this is where the difference lies, the backstack is managed by the system with few codes. You can stick to the old fragment transactions, just that you have to put up with fragment management and the lengthy codes.
+
+Extras:
+In ```MainFragment``` and ```fragment_main.xml```, I utilized databinding to link up my model codes to a specific model. The advantage for this method is to use the binding design pattern to avoid null pointer exception. The advantage of using the DataBinding and the model method is so that you can make data more structured and organized.
+    
+For a hierarchical approach to OOP, I use a BaseFragment to retrieve the navigation controller to be reused across all my fragment instance. This makes your codes more concise and easily maintained.
