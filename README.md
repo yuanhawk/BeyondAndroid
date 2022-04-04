@@ -69,3 +69,16 @@ Extras:
 In ```MainFragment``` and ```fragment_main.xml```, I utilized databinding to link up my model codes to a specific model. The advantage for this method is to use the binding design pattern to avoid null pointer exception. The advantage of using the DataBinding and the model method is so that you can make data more structured and organized.
     
 For a hierarchical approach to OOP, I use a BaseFragment to retrieve the navcontroller to be reused across all my fragment instance. This makes your codes more concise and easily maintained.
+
+If you are interested in Fragment Architecture Components, here is a video from Google IO 
+
+# Week 10
+With reference to the new Executor and Handler threads that you are exposed to, Google introduced a new threading API known as WorkManager. Just years ago, Android engineers are confused as to which threads to use.
+<img src="./Week 10 Xtras/MultiThreadLib.png"/>
+It was difficult to know which one to use, and it gets even more complicated that each serves a different purpose.
+<img src="./Week 10 Xtras/RequirementChart.png"/>
+
+Interestingly, the Google decides to resolve this for the Android engineers, and the under the hood implementation is as follow:
+<img src="./Week 10 Xtras/UnderTheHoodImplem.png"/>
+
+Do spend some time to read up on this, if you are interested. I have done the job of converting it to Java for this course.
