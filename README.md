@@ -77,8 +77,7 @@ With reference to the new Executor and Handler threads that you are exposed to, 
 <img src="./Week 10 Xtras/MultiThreadLib.png"/>
 It was difficult to know which one to use, and it gets even more complicated that each serves a different purpose.
 <img src="./Week 10 Xtras/RequirementChart.png"/>
-
 Interestingly, the Google decides to resolve this for the Android engineers, and the under the hood implementation is as follow:
 <img src="./Week 10 Xtras/UnderTheHoodImplem.png"/>
 
-Do spend some time to read up on this, if you are interested. I have done the job of converting it to Java for this course.
+Do spend some time to read up on WorkManager at this link: https://developer.android.com/topic/libraries/architecture/workmanager/basics. I have done the job of writing it in Java for this course.
